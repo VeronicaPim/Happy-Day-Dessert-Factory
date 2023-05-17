@@ -1,0 +1,140 @@
+<!DOCTYPE html>   <!-- Document type of html -->
+<html lang="en">   <!-- Language of Document is English -->
+  <head>
+
+    <meta charset="utf-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="author" content="Veronica Pimenova">
+    <meta name="keywords" content="Happy Day Dessert Factory">
+
+    <!-- Link to css files for styling -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/story.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css">
+
+
+    <!-- Link to files for javascript features -->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"> </script>
+    <script src="js/main.js" type="text/javascript"> </script>
+    <title>Happy Day Dessert Factory</title> <!-- Title of company for website -->
+
+    <!-- From lab 4 for the javascript of tab mouseover-->
+    <script>
+      $(function() {
+      $( "#tabs" ).tabs({
+        event: "mouseover"});
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <!-- List of header content -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="story.html">Background</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="catering.html">Catering</a></li>
+        </ul>
+        <!-- Link to contact page for contact.html -->
+        <a href="contact.html" class="full-width">Contact</a>
+      </nav>
+    </header>
+
+    <div id="content">
+      <!-- Headers 1 and 2 -->
+			<h1>Contact Us</h1>
+      <h2>Smiles Loading...</h2>
+
+      <div id="tabs">
+        <ul>
+         <li><a href="#tabs-1">Hours of Operation</a></li>
+          <li><a href="#tabs-2">Address, Phone Number, and Email</a></li>
+          <li><a href="#tabs-3">Our Location on the Map</a></li>
+          <li><a href="#tabs-4">Promotional Discount</a></li>
+        </ul>
+                                     
+        <div id="tabs-1">
+          <p>Below are the hours of operation for the company. During these times we are open for dine in.</p>
+
+        <!-- Table for days and hours the company is open -->
+          <table>
+            <thead>
+              <tr>
+                <th>Day</th> 
+                <th>Hours</th> 
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Weekdays</td>
+                <td><!-- Times open -->12PM-8PM</td>
+              </tr>
+              <tr>
+                <td>Weekends</td>
+                <td><!-- Times open -->12PM-8PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+                                              
+        <div id="tabs-2">
+
+          <!-- Class called contact -->
+			    <div class="contact">
+
+          <!-- Company address -->
+				  <p>Address: <br> 906A Western Avenue Pittsburgh, PA <br> 15233</p>
+
+          <!-- Company email and phone number -->
+				  <p>Email: <br> <a href="mailto:info@happydaydessertfactory.com">info@happydaydessertfactory.com</a><br></p>
+
+          <!-- Company address -->
+				  <p>Phone Number: <br> <a href="tel:4128720117">412 872-0117</a></p>
+			    </div>
+        </div>
+                                               
+        <div id="tabs-3">
+
+          <!-- Maps tag (from Google Maps)-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.049318943514!2d-80.01914878460299!3d40.45204537936101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f55936fcaed9%3A0x5d18ed4b7f0c8f5a!2sHappy%20Day%20Dessert%20Factory!5e0!3m2!1sen!2sus!4v1680195232162!5m2!1sen!2sus" 
+          width="600" height="450" style="border:0;" allowfullscreen="" 
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div id="tabs-4">
+          <img src="images/contact.png" width="557" height="397" alt="contact image"> <!-- Image of contact.png -->
+
+          <p>Use the code "SPRING" when checking out to recieve a free water ice (valid until 3/1/2023).</p>
+        </div>
+      </div> 
+
+      <br>
+      <br>
+
+			<form>
+        <!-- Contact form for name, zipcode, email, and subscription -->
+				<input type="text" required placeholder="Name (First and Last)">
+				<input type="text" pattern="[1-9]{5}" placeholder="5-Number Zipcode">
+				<input type="email" required placeholder="Email Address">
+				
+				<div class="checkbox">
+				<input type="checkbox"> 
+				<label>Check here to subscribe</label>
+				</div>
+
+        <!-- Submit button -->
+				<button type="submit">Submit Contact Form</button>
+			</form>
+    </div>
+
+    <footer>&copy; Happy Day Dessert Factory 2023<br></footer> <!-- Footer and copyright -->
+
+    <script defer src="js/main.js"></script> <!-- Javascript link for js/main.js -->
+  </body>
+</html>

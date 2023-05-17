@@ -1,0 +1,26 @@
+/*secondary css page for website stlying.
+covers the headers 1 and 2, paragraph, image, part of contact, and visited.*/
+
+h1, h2 {
+ text-align: center;
+}
+
+p {
+	max-width: 80%;
+	margin: 20px auto;
+}
+
+img:not(header img) {
+	display: block;
+	margin: 20px auto;
+	object-fit: cover;
+}
+
+.contact {
+	display: flex;
+	text-align: center;
+}
+
+a:visted {
+	color: red !important;
+}
